@@ -14,11 +14,11 @@ res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two',function(req,res){
-res.send('Under Construction!!');
+res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 app.get('/article3',function(req,res){
-res.send('Under Construction!!!');
+res.sendFile(path.join(__dirname, 'ui', 'article3.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
