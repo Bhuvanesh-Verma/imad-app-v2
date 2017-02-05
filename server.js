@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-res.sendFile('Under Construction!');
+res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/article-two',function(req,res){
-res.sendFile('Under Construction!!');
+res.send('Under Construction!!');
 });
 
 app.get('/article3',function(req,res){
-res.sendFile('Under Construction!!!');
+res.send('Under Construction!!!');
 });
 
 app.get('/ui/style.css', function (req, res) {
