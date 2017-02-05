@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles={
-         art1:{
+         'art1':{
      
     title:`Article One:Ready to use.`,
     heading:`Article One`,
@@ -18,7 +18,7 @@ var articles={
    				The Math Explorers' Club is an NSF supported project that develops materials and activites to give middle school and high school students an experience of more advanced topics in mathematics. These materials are directed towards teachers, who are welcome to adapt and copy the materials in any way they see fit, as well as towards more advanced students, who may wish to learn independently.
    			</p>`
 },
-        art2:{
+        'art2':{
      title:`Article Two:Ready to use.`,
     heading:`Article Two`,
     date:`Feb 5 2017`,
@@ -34,7 +34,7 @@ var articles={
    				In 1995, at age 24, Musk moved to California to begin a PhD in applied physics and materials science at Stanford University, but left the program after two days to pursue his entrepreneurial aspirations in the areas of the Internet, renewable energy and outer space.[36][43] In 2002, he became a U.S. citizen.
    			</p>`
 },
-           art3:{
+           'art3':{
      title:`Article Two:Ready to use.`,
     heading:`Article Two`,
     date:`Feb 5 2017`,
