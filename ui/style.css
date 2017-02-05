@@ -19,4 +19,37 @@ body {
 .img-medium {
     height: 200px;
 }
+.hu{
+       margin:0 auto;
+       max-width:650px;
+       font:menu;
+   }
+     .st{
+      max-width: 800px;
+      word-spacing: 0.5em;
+      letter-spacing: 0.1em;
+      margin: 0 auto;
+      color: black;
+      font: serif;
+      text-decoration: blink;
+     }
+     a:hover{
+      color:grey;
+     }
+     h3{
+      font: fantasy;
+      color: red;
+      font-style: oblique;
 
+     }
+     p{
+      font-style: italic;
+      font: sans-serif;
+      font-variant: small-caps;
+      font-weight: lighter;
+      background-attachment: scroll;
+      background-position: 90%;
+     }
+     .date{
+    color:blue;
+     }
