@@ -26,7 +26,7 @@ body {
    }
      .st{
       max-width: 800px;
-      word-spacing: 0.5em;
+      word-spacing: 0.1em;
       letter-spacing: 0.1em;
       margin: 0 auto;
       color: black;
