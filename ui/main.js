@@ -89,7 +89,7 @@ send.onClick=function(){
     var commentInput=document.getElementById('comments');
 var comm=commentInput.value;
  
-   req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/getcomm?name='+commentInput,true);
+   req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/getcomm?com='+commentInput,true);
    req.send(null);
     
 };
