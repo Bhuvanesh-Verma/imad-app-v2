@@ -1,12 +1,26 @@
 //counter
 var button=document.getElementById('counter');
-var counter=0;
+
 button.onclick=function(){
     
+    var req= new XMLHttpRequest();
     
+    req.onreadystatechange=function(){
+        
+        if(req.readyState===XMLHttpRequest.DONE)
+        {
+            if(req.status===200)
+            {
+                var counter=req.responseText;
+                 var span=document.getElementById('count');
+                 span.innerHTML=counter.toString();
+            }
+        }
+        
+    };
     
-    
-    counter=counter+1;
-    var span=document.getElementById('count');
-    span.innerHTML=counter.toString();
+ 
+   req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/counter',true);
+   req.send(NULL);
+   
 };
