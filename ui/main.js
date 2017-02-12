@@ -93,3 +93,7 @@ var comm=commentInput.value;
    req.send(null);
     
 };
+var n=document.getElementById('new');
+n.onClick=function(){
+    alert("Hello");
+};
