@@ -84,6 +84,13 @@ return htmlTemp;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+var comments=[];
+app.get('/getcomm',function(req,res)
+{
+   var name=req.query.name;
+   name.push(name);
+   res.send(JSON.stringify(comments));
+});
 
 var counter=0;
 app.get('/counter',function(req,res)
@@ -99,13 +106,7 @@ app.get('/getname',function(req,res){
    res.send(JSON.stringify(names));
 });
 
-var comments=[];
-app.get('/getcomm',function(req,res)
-{
-   var name=req.query.name;
-   name.push(name);
-   res.send(JSON.stringify(comments));
-});
+
 
 app.get('/:articleName',function(req,res){
     var articleName=req.params.articleName;
