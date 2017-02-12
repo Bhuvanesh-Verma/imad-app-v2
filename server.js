@@ -89,7 +89,7 @@ app.get('/getcomm',function(req,res)
 {
    var com=req.query.com;
    comments.push(com);
- res.send(JSON.stringify(com));
+ res.send(JSON.stringify(comments));
 });
 
 var counter=0;
