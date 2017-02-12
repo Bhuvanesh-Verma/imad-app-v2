@@ -26,8 +26,7 @@ button.onclick=function(){
 };
 
 //Submit
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
+
 var submit=document.getElementById('Submit');
 submit.onclick=function(){
     
@@ -55,7 +54,8 @@ submit.onclick=function(){
           }
         
     };
-    
+    var nameInput=document.getElementById('name');
+var name=nameInput.value;
  
    req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/getname?name='+name,true);
    req.send(null);
