@@ -1,1 +1,12 @@
-console.log('Loaded!');
+//counter
+var button=document.getElementById('couter');
+var counter=0;
+button.onclick=function(){
+    
+    
+    
+    
+    counter=counter+1;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
+}
