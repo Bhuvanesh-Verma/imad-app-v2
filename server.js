@@ -87,8 +87,8 @@ app.get('/', function (req, res) {
 var comments=[];
 app.get('/getcomm',function(req,res)
 {
-   var name=req.query.name;
-   name.push(name);
+   var com=req.query.com;
+   com.push(com);
    res.send(JSON.stringify(comments));
 });
 
