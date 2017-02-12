@@ -61,9 +61,9 @@ submit.onclick=function(){
  
 };
 
-var send=document.getElementById('Submit');
+var send=document.getElementById('Send');
 send.onClick=function(){
-    
+    alert('This is what an alert message looks like.');
     
      var req = new XMLHttpRequest();
     
