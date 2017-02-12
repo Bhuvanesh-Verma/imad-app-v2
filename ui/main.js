@@ -32,13 +32,33 @@ var submit=document.getElementById('Submit');
 submit.onclick=function(){
     
     
+      var req = new XMLHttpRequest();
     
-    var name=['name1','name2','name3'];
-    var list='';
-    for(var i=0;i<name.length;i++)
-    {
-        list += '<li>' + name[i] + '</li>';
-    }
-    var ul=document.getElementById('ti');
-    ul.innerHTML=list;
+    req.onreadystatechange=function(){
+        
+        if(req.readyState===XMLHttpRequest.DONE)
+        {
+            if(req.status===200)
+            {
+                   
+    
+               var names=req.responseText;
+               names=JSON.parse(names);
+                var list='';
+                for(var i=0;i<name.length;i++)
+                {
+                    list += '<li>' + name[i] + '</li>';
+                }
+                var ul=document.getElementById('ti');
+                ul.innerHTML=list;
+             }
+          }
+        
+    };
+    
+ 
+   req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/getname?name='+name,true);
+   req.send(null);
+    
+ 
 };
