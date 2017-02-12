@@ -3,7 +3,7 @@ var button=document.getElementById('counter');
 
 button.onclick=function(){
     
-    var req= new XMLHttpRequest();
+    var req = new XMLHttpRequest();
     
     req.onreadystatechange=function(){
         
@@ -21,6 +21,6 @@ button.onclick=function(){
     
  
    req.open('GET','http://bhuvanesh-verma.imad.hasura-app.io/counter',true);
-   req.send(NULL);
+   req.send(null);
    
 };
