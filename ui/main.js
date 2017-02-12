@@ -61,7 +61,7 @@ submit.onclick=function(){
  
 };
 
-var send=document.getElementById('Send');
+var send=document.getElementById('Submit');
 send.onClick=function(){
     
     
