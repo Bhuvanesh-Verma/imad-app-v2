@@ -73,12 +73,12 @@ send.onClick=function(){
         {
             if(req.status===200)
             {
-               var names=req.responseText;
-               names=JSON.parse(names);
+               var ch=req.responseText;
+               ch=JSON.parse(ch);
                 var list='';
-                for(var i=0;i<names.length;i++)
+                for(var i=0;i<ch.length;i++)
                 {
-                    list += '<li>' + names[i] + '</li>';
+                    list += '<li>' + ch[i] + '</li>';
                 }
                 var ol=document.getElementById('tu');
                 ol.innerHTML=list;
