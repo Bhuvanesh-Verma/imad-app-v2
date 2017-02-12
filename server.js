@@ -88,8 +88,8 @@ var comments=[];
 app.get('/getcomm',function(req,res)
 {
    var com=req.query.com;
-   com.push(com);
-   res.send(JSON.stringify(comments));
+   comments.push(com);
+ res.send(JSON.stringify(com));
 });
 
 var counter=0;
