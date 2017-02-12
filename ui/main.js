@@ -61,7 +61,7 @@ submit.onclick=function(){
  
 };
 
-var send=document.getElementByID('hu');
+var send=document.getElementById('hu');
 send.onClick=function(){
     alert('This is what an alert message looks like.');
     
