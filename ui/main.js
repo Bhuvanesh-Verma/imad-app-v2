@@ -40,5 +40,5 @@ submit.onclick=function(){
         list += '<li>' + name[i] + '</li>';
     }
     var ul=document.getElementById('ti');
-    ui.innerHTML=list;
+    ul.innerHTML=list;
 };
