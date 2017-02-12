@@ -111,8 +111,8 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names=[];
-app.get('/getname/:name',function(req,res){
-   var name=req.params.name;
+app.get('/getname',function(req,res){
+   var name=req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
    
