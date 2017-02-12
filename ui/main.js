@@ -46,7 +46,7 @@ submit.onclick=function(){
                 var list='';
                 for(var i=0;i<name.length;i++)
                 {
-                    list += '<li>' + name[i] + '</li>';
+                    list += '<li>' + names[i] + '</li>';
                 }
                 var ul=document.getElementById('ti');
                 ul.innerHTML=list;
