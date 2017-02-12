@@ -29,7 +29,7 @@ button.onclick=function(){
 
 var submit=document.getElementById('Submit');
 submit.onclick=function(){
-    
+    alert('This is what an alert message looks like.');
     
       var req = new XMLHttpRequest();
     
