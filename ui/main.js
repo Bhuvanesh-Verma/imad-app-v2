@@ -39,8 +39,6 @@ submit.onclick=function(){
         {
             if(req.status===200)
             {
-                   
-    
                var names=req.responseText;
                names=JSON.parse(names);
                 var list='';
@@ -50,8 +48,8 @@ submit.onclick=function(){
                 }
                 var ul=document.getElementById('ti');
                 ul.innerHTML=list;
-             }
-          }
+            }
+        }
         
     };
     var nameInput=document.getElementById('name');
